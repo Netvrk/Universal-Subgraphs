@@ -1,0 +1,8 @@
+{
+  "output": "generated/meta.travelers.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0x5372f926b34Be60aC1436372107C3eE8c6e056E5", "id": "Nibiru", "startBlock": 13646785, "module": "erc721" },
+    { "address": "0xA413f007BB3f20595b7f304ffd2E580481433a16", "id": "GenesisStone", "startBlock": 13592572, "module": "erc1155" }
+  ]
+}

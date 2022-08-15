@@ -1,0 +1,9 @@
+{
+  "output": "generated/jungle.freaks.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0x7E6Bc952d4b4bD814853301bEe48E99891424de0", "id": "JungleFreaksGenesis", "startBlock": 13412290, "module": "erc721" },
+    { "address": "0x495f947276749Ce646f68AC8c248420045cb7b5e", "id": "LegendaryVault", "startBlock": 11374506, "module": "erc1155" },
+    { "address": "0x4D648C35212273d638a5e602aB1177bB75aD7946", "id": "Jungle", "startBlock": 14141614, "module": "erc20" }
+  ]
+}

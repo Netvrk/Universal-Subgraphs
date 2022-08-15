@@ -1,0 +1,7 @@
+{
+  "output": "generated/psilo.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0xCd285ab5498CacB4b161823798F0607B6171550c", "id": "Psilo", "startBlock": 14698891, "module": "erc721" }
+  ]
+}

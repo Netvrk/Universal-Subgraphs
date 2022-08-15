@@ -1,0 +1,7 @@
+{
+  "output": "generated/nonconformist.ducks.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0x0F4B28D46CAB209bC5fa987A92A26a5680538e45", "id": "NonconformistDucks", "startBlock": 13335693, "module": "erc721" }
+  ]
+}

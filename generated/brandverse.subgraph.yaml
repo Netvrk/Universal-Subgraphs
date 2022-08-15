@@ -1,0 +1,28 @@
+specVersion: 0.0.4
+schema:
+  file: brandverse.schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Ambassador
+    network: mainnet
+    source:
+      address: "0xF3991402D43497Ee90E2Ca9494F294DF45ae5F0a"
+      abi: IERC721
+      startBlock: 14366440
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - ERC721Contract
+      abis:
+        - name: IERC721
+          file: ../node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ../node_modules/@openzeppelin/subgraphs/src/datasources/erc721.ts

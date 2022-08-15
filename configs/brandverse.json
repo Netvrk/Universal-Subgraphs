@@ -1,0 +1,7 @@
+{
+  "output": "generated/brandverse.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0xF3991402D43497Ee90E2Ca9494F294DF45ae5F0a", "id": "Ambassador", "startBlock": 14366440, "module": "erc721" }
+  ]
+}

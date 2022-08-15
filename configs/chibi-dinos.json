@@ -1,0 +1,7 @@
+{
+  "output": "generated/chibi.dinos.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0xe12EDaab53023c75473a5A011bdB729eE73545e8", "id": "ChibiDinos", "startBlock": 13063415, "module": "erc721" }
+  ]
+}

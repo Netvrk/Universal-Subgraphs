@@ -1,0 +1,8 @@
+{
+  "output": "generated/martians.rednecks.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0x36c9A3a1D92445BCCb2eEc96CD86fDE416ACD57A", "id": "MartiansVsRednecks", "startBlock":  14302355, "module": "erc721" },
+    { "address": "0xc5E395EF8eFA253940D62A8810112565Cc0faE4e", "id": "MartiansVsRednecksWeapons", "startBlock":  15295862, "module": "erc721" }
+  ]
+}

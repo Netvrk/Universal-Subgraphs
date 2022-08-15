@@ -1,0 +1,8 @@
+{
+  "output": "generated/cryptowalkers.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0x258AEac01672e6857972707fc129a6A39d09758b", "id": "Cryptowalkers", "startBlock": 13734826, "module": "erc721" },
+    { "address": "0x5667a1a3318267C3774092648F0cAB8CAb4955Dc", "id": "Weapons", "startBlock": 14539389, "module": "erc721" }
+  ]
+}

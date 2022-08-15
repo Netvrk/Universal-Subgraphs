@@ -1,0 +1,10 @@
+{
+  "output": "generated/netvrk.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0x244FC4178fa685Af909c88b4D4CD7eB9127eDb0B", "startBlock":  13986182, "module": "erc721", "id": "NetvrkLand" },
+    { "address": "0xdc403FCDf735426e77Fdd3bbD6223a3ac03eF3b3", "startBlock":  13986118, "module": "erc721", "id": "NetvrkAvatar" },
+    { "address": "0xB95aBD5fa9E71f1981505c3D9A7800c369b0718c", "startBlock":  13986199, "module": "erc721", "id": "NetvrkTransport" },
+    { "address": "0xBCbEaE3620b3280dF67143Ad7eC45d67C5A4355e", "startBlock":  13986160, "module": "erc721", "id": "NetvrkBonus" }
+  ]
+}

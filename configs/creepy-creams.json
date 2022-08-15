@@ -1,0 +1,9 @@
+{
+  "output": "generated/creepy.creams.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0xA5814003D93a6Ff861ae125AC706CE5043004903", "id": "CreepyCreams", "startBlock": 13408605, "module": "erc721" },
+    { "address": "0x436FbF52FAF705b6f82404Bd06fB637BC4cC44ae", "id": "MechaMelters", "startBlock": 13757005, "module": "erc721" },
+    { "address": "0xB226DC40B282020697fadBB2482Bc879e5c7C6C8", "id": "Scoop", "startBlock": 13663480, "module": "erc20" }
+  ]
+}

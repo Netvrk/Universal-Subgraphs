@@ -1,0 +1,28 @@
+specVersion: 0.0.4
+schema:
+  file: psilo.schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Psilo
+    network: mainnet
+    source:
+      address: "0xCd285ab5498CacB4b161823798F0607B6171550c"
+      abi: IERC721
+      startBlock: 14698891
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - ERC721Contract
+      abis:
+        - name: IERC721
+          file: ../node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ../node_modules/@openzeppelin/subgraphs/src/datasources/erc721.ts
