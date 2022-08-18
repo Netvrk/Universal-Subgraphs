@@ -1,0 +1,7 @@
+{
+  "output": "generated/dame.dash.avatar.",
+  "chain": "ropsten",
+  "datasources": [
+    { "address": "0x87b6A06Ccc301fa694b4b458b448ad20a385C844", "id": "DameDashAvatar", "startBlock": 12634678, "module": "erc721" }
+  ]
+}
