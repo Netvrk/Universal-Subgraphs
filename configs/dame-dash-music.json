@@ -1,0 +1,7 @@
+{
+  "output": "generated/dame.dash.music.",
+  "chain": "ropsten",
+  "datasources": [
+    { "address": "0x438d6Ddf4fe754789Fc53fce69e412ea38f8446b", "id": "DameDashMusic", "startBlock": 12634695, "module": "erc721" }
+  ]
+}
