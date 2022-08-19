@@ -1,0 +1,11 @@
+import { Address } from "@graphprotocol/graph-ts";
+
+export const DAMEDASH_AVATAR_NFT_ADDRESS =
+  "0x87b6A06Ccc301fa694b4b458b448ad20a385C844";
+
+export const DAMEDASH_AVATAR_STAKING_NFT_ADDRESS =
+  "0xA0B6C31aE2326486884d5BA6BB8E6895991c9496";
+
+export const ADDRESS_ZERO = Address.fromString(
+  "0x0000000000000000000000000000000000000000"
+);
