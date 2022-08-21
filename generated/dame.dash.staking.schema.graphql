@@ -1,0 +1,19 @@
+enum NftType @entity {
+  transport
+  bonus
+  land
+  avatar
+}
+
+enum StakeStatus @entity {
+  active
+  inactive
+}
+
+type Nft @entity {
+  id: ID!
+  tokenId: BigInt!
+  owner: Bytes!
+  type: NftType!
+  stake: StakeStatus!
+}
