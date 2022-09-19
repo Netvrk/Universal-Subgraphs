@@ -1,0 +1,76 @@
+specVersion: 0.0.2
+schema:
+  file: junk.yard.dogs.schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: JunkYardDogs
+    network: mainnet
+    source:
+      address: "0x91673149FFae3274b32997288395D07A8213e41F"
+      abi: IERC721
+      startBlock: 12795787
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ERC721Contract
+      abis:
+        - name: IERC721
+          file: ../node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ../node_modules/@openzeppelin/subgraphs/src/datasources/erc721.ts
+  - kind: ethereum/contract
+    name: JunkYardDogsBones
+    network: mainnet
+    source:
+      address: "0x2C173A97ED9beC4b292c7786811510268fd5e170"
+      abi: IERC721
+      startBlock: 12795785
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ERC721Contract
+      abis:
+        - name: IERC721
+          file: ../node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ../node_modules/@openzeppelin/subgraphs/src/datasources/erc721.ts
+  - kind: ethereum/contract
+    name: JunkyardPuppies
+    network: mainnet
+    source:
+      address: "0x7BC6d85a15B21CEfd62Ce5ab2cF87B611da6bE59"
+      abi: IERC721
+      startBlock: 13463421
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ERC721Contract
+      abis:
+        - name: IERC721
+          file: ../node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ../node_modules/@openzeppelin/subgraphs/src/datasources/erc721.ts
