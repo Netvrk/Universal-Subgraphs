@@ -1,0 +1,7 @@
+{
+  "output": "generated/jurassic.punks.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0x325bAd883B4E9a35277E99902D94DD18186Ae219", "id": "JPunks", "startBlock": 14448033, "module": "erc721" }
+  ]
+}
