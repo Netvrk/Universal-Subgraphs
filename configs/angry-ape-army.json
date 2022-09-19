@@ -5,7 +5,6 @@
     { "address": "0x77640cf3F89A4F1B5CA3A1e5c87f3F5B12ebf87e", "id": "AngryApeArmy", "startBlock": 13636154, "module": "erc721" },
     { "address": "0x74F1716A9F452dD36d945368d806cD491290B240", "id": "Evolution", "startBlock": 14108759, "module": "erc721" },
     { "address": "0x6f50B93B61259593634A3067adafD93F1b8D0abA", "id": "Valkyrie", "startBlock": 14920453, "module": "erc721" },
-    { "address": "0x7A29Cbe13Bf1d722e244bAA6e527f4438763457B", "id": "Weapons", "startBlock": 13893465, "module": "erc721" },
-    { "address": "0x495f947276749Ce646f68AC8c248420045cb7b5e", "id": "Legendary", "startBlock": 11374506, "module": "erc1155" }
+    { "address": "0x7A29Cbe13Bf1d722e244bAA6e527f4438763457B", "id": "Weapons", "startBlock": 13893465, "module": "erc721" }
   ]
 }
