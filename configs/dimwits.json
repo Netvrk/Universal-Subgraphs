@@ -1,0 +1,7 @@
+{
+  "output": "generated/dimwits.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0x1a4C4B22fA54b65A0BCE5F4eA4a33378c007726E", "id": "DimWits", "startBlock": 14169421, "module": "erc721" }
+  ]
+}

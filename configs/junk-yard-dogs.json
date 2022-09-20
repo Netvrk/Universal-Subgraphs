@@ -1,0 +1,9 @@
+{
+  "output": "generated/junk.yard.dogs.",
+  "chain": "mainnet",
+  "datasources": [
+    { "address": "0x91673149FFae3274b32997288395D07A8213e41F", "id": "JunkYardDogs", "startBlock": 12795787, "module": "erc721" },
+    { "address": "0x2C173A97ED9beC4b292c7786811510268fd5e170", "id": "JunkYardDogsBones", "startBlock": 12795785, "module": "erc721" },
+    { "address": "0x7BC6d85a15B21CEfd62Ce5ab2cF87B611da6bE59", "id": "JunkyardPuppies", "startBlock": 13463421, "module": "erc721" }
+  ]
+}
