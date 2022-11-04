@@ -1,0 +1,12 @@
+{
+    "output": "generated/netvrk-mr-axe.",
+    "chain": "goerli",
+    "datasources": [
+        {
+            "address": "0xb055732E1e6E810E0ff1A62bCD8c7511Be935335",
+            "id": "netvrk-mr-axe",
+            "startBlock": 7882748,
+            "module": "erc721"
+        }
+    ]
+}

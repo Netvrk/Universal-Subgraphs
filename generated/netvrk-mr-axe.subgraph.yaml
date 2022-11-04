@@ -1,0 +1,28 @@
+specVersion: 0.0.4
+schema:
+  file: netvrk-mr-axe.schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: netvrk-mr-axe
+    network: goerli
+    source:
+      address: "0xb055732E1e6E810E0ff1A62bCD8c7511Be935335"
+      abi: IERC721
+      startBlock: 7882748
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - ERC721Contract
+      abis:
+        - name: IERC721
+          file: ../node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ../node_modules/@openzeppelin/subgraphs/src/datasources/erc721.ts
