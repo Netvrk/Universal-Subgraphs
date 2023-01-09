@@ -25,7 +25,7 @@ dataSources:
           handler: handleApprovalForAll
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
-      file: ../node_modules/@openzeppelin/subgraphs/src/datasources/erc721.ts
+      file: ..\node_modules\@openzeppelin\subgraphs\src\datasources\erc721.ts
   - kind: ethereum/contract
     name: Weapons
     network: mainnet
@@ -49,4 +49,28 @@ dataSources:
           handler: handleApprovalForAll
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
-      file: ../node_modules/@openzeppelin/subgraphs/src/datasources/erc721.ts
+      file: ..\node_modules\@openzeppelin\subgraphs\src\datasources\erc721.ts
+  - kind: ethereum/contract
+    name: Females
+    network: mainnet
+    source:
+      address: "0xC3cE480376A6340e0A4CDd3E4843BDC0bc765a45"
+      abi: IERC721
+      startBlock: 16127042
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - ERC721Contract
+      abis:
+        - name: IERC721
+          file: ../node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ..\node_modules\@openzeppelin\subgraphs\src\datasources\erc721.ts
