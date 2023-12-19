@@ -9,7 +9,7 @@ OpenZeppelin documentation: https://docs.openzeppelin.com/subgraphs/0.1.x/genera
 $ yarn install
 ```
 
-## Generating manifest from JSON 
+## Generating manifest from JSON
 
 ```bash
 $ npx graph-compiler \
@@ -31,18 +31,12 @@ $ yarn codegen ./generated/<subgraph manifest name>.yaml
 $ yarn build ./generated/<subgraph manifest name>.yaml
 ```
 
-## Register subgraph name
-
-1. https://thegraph.com/hosted-service/dashboard
-2. Sign-in with GitHub
-3. Add Subgraph
-4. Name subgraph as desired (you will need this subgraph name for the next step)
-5. Select desired account (you will need this account name for the next step)
-6. Fill required fields
-7. Create subgraph
-
-## Deploy subgraph
+## Deploy Subgraph
 
 ```bash
-$ yarn deploy --node https://api.thegraph.com/deploy/ <account/subgraph_name> ./generated/<subgraph manifest name>.yaml --access-token <your hosted service access token>
+npx graph auth --product hosted-service xxx
+```
+
+```bash
+npm run deploy --node https://api.thegraph.com/deploy/ netvrk/psilo ./generated/psilo.subgraph.yaml
 ```
