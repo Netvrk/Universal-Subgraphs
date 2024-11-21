@@ -1,7 +1,18 @@
+# Universal Subgraph Generation and Deployment Toolkit
+
 ## Description
 
-Custom subgraph creation and deployment
-OpenZeppelin documentation: https://docs.openzeppelin.com/subgraphs/0.1.x/generate
+A toolkit for creating and deploying custom subgraphs using OpenZeppelin's framework. Subgraphs index blockchain data to enable efficient querying through GraphQL. It is used to generate subgraphs for Netvrk's Partner's projects. The configuration is done through JSON files and the toolkit generates the necessary files for deployment.
+
+📚 [OpenZeppelin Subgraphs Documentation](https://docs.openzeppelin.com/subgraphs/0.1.x/generate)
+
+## Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js
+- Yarn
+- npx
 
 ## Installation
 
